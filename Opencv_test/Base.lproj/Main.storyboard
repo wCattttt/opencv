@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DeN-2j-ctp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LFX-0n-R3p">
+            <objects>
+                <navigationController id="DeN-2j-ctp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2E-hY-xE1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ohA-BA-Lv6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzp-80-xuy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="303"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDD-SP-40W">
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="Fzl-9z-uxO"/>
+                                    <constraint firstAttribute="height" constant="47" id="Ywn-kO-lCS"/>
+                                </constraints>
+                                <state key="normal" title="车牌识别"/>
+                                <connections>
+                                    <action selector="CarIdentify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cD-e1-GGr"/>
+                                    <segue destination="Fie-Jv-OSf" kind="push" id="UiZ-Wz-sh6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7H-3R-puc">
+                                <frame key="frameInset" minX="16" minY="274" width="290" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="人脸识别"/>
+                                <connections>
+                                    <segue destination="MIk-EX-dyX" kind="push" id="Dik-Uu-Dw3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BDD-SP-40W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="UIq-gi-TVC"/>
+                            <constraint firstItem="BDD-SP-40W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZq-Tj-PH4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BbS-Jh-GXR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="303"/>
+        </scene>
+        <!--车牌-->
+        <scene sceneID="ZQe-iU-r2b">
+            <objects>
+                <viewController id="Fie-Jv-OSf" customClass="CarIdentifyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WZe-tJ-8BV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uys-IA-WFw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GOa-dB-lHD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pc-L5-5GB" customClass="UIImageView">
+                                <frame key="frameInset" minY="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="车牌" id="ASl-A6-v44">
+                        <rightBarButtonItems>
+                            <barButtonItem tag="100" title="拍照" id="YpL-vX-eP3">
+                                <connections>
+                                    <action selector="cancera:" destination="Fie-Jv-OSf" id="PE2-WB-q96"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="重拍" id="enZ-hZ-eWi">
+                                <connections>
+                                    <action selector="reCamera:" destination="Fie-Jv-OSf" id="dMD-mK-mwZ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="前置" id="aTj-EG-Re3">
+                                <connections>
+                                    <action selector="currentCamera:" destination="Fie-Jv-OSf" id="OjZ-ps-V54"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="camceraBarBt" destination="YpL-vX-eP3" id="dnb-cT-xda"/>
+                        <outlet property="curCameraBarBt" destination="aTj-EG-Re3" id="THU-Aa-Zmq"/>
+                        <outlet property="imageView" destination="1Pc-L5-5GB" id="h9c-ey-UeN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUy-1C-OpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.25" y="-54.929577464788736"/>
+        </scene>
+        <!--人脸-->
+        <scene sceneID="VnM-Mp-Oe7">
+            <objects>
+                <viewController id="MIk-EX-dyX" customClass="FaceIdentifyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B0U-QY-qfU"/>
+                        <viewControllerLayoutGuide type="bottom" id="IfH-nk-Pjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ccO-U0-FmN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-8E-S6P">
+                                <frame key="frameInset" minY="47" width="320" height="521"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IF6-OM-0T7">
+                                <frame key="frameInset" minX="262" minY="521" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1LN-vC-Y5j">
+                                <frame key="frameInset" minX="150" minY="215" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="人脸" id="SQX-Z8-bNx">
+                        <rightBarButtonItems>
+                            <barButtonItem title="人脸检测" id="rBG-Jw-uoi">
+                                <connections>
+                                    <action selector="FaceIdentify:" destination="MIk-EX-dyX" id="B2S-aq-iyj"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="选择照片" id="Vsf-oM-RTg">
+                                <connections>
+                                    <action selector="SelectImg:" destination="MIk-EX-dyX" id="JGM-jN-1lv"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_img" destination="UtV-8E-S6P" id="Syb-kD-bMb"/>
+                        <outlet property="dogeSwitch" destination="IF6-OM-0T7" id="mxJ-tk-OUq"/>
+                        <outlet property="indicator" destination="1LN-vC-Y5j" id="QtG-g3-qws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPU-k1-sPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.375" y="603.16901408450701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="574" height="704"/>
+    </resources>
+</document>

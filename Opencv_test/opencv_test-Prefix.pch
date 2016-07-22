@@ -1,0 +1,23 @@
+//
+//  opencv_test-Prefix.pch
+//  Opencv_test
+//
+//  Created by 魏唯隆 on 16/7/22.
+//  Copyright © 2016年 魏唯隆. All rights reserved.
+//
+
+#ifndef opencv_test_Prefix_pch
+#define opencv_test_Prefix_pch
+
+
+#ifdef __cplusplus
+#include <opencv2/opencv.hpp>
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#endif
+
+#endif /* opencv_test_Prefix_pch */
