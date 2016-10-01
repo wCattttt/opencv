@@ -17,6 +17,7 @@
 		92070DB61D3792DC00F76D49 /* 京A88731.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92070DB51D3792DC00F76D49 /* 京A88731.jpg */; };
 		92070DBB1D386FE500F76D49 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92070DBA1D386FE500F76D49 /* MyLabel.m */; };
 		92070DBE1D387F3E00F76D49 /* LabelTextVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 92070DBD1D387F3E00F76D49 /* LabelTextVertical.m */; };
+		9216DB2E1D758CD30017DC64 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9216DB2D1D758CD30017DC64 /* opencv2.framework */; };
 		921A0D581D407A7900698548 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921A0D571D407A7900698548 /* AssetsLibrary.framework */; };
 		921A0D601D40D08800698548 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 921A0D5F1D40D08800698548 /* A.png */; };
 		921A0D6A1D41AA5D00698548 /* UIImage2OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 921A0D691D41AA5D00698548 /* UIImage2OpenCV.mm */; };
@@ -34,8 +35,6 @@
 		9253AE2C1D3C90370024BE83 /* WWLSiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9253AE111D3C90370024BE83 /* WWLSiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		925FC5241D3CD26A00FAC749 /* FaceIdentifyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 925FC5231D3CD26A00FAC749 /* FaceIdentifyViewController.mm */; };
 		925FC5261D3CD81400FAC749 /* doge.png in Resources */ = {isa = PBXBuildFile; fileRef = 925FC5251D3CD81400FAC749 /* doge.png */; };
-		92F70EEE1D406ED500E95C87 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F70EED1D406ED500E95C87 /* opencv2.framework */; };
-		92F70EEF1D406EEA00E95C87 /* opencv2.framework in Resources */ = {isa = PBXBuildFile; fileRef = 92F70EED1D406ED500E95C87 /* opencv2.framework */; };
 		92F70EF41D40726900E95C87 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F70EF21D40726900E95C87 /* 1.jpg */; };
 		92F70EF51D40726900E95C87 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F70EF31D40726900E95C87 /* 2.jpg */; };
 		92F70EF71D40738600E95C87 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 92F70EF61D40738600E95C87 /* haarcascade_frontalface_alt2.xml */; };
@@ -91,6 +90,7 @@
 		92070DBA1D386FE500F76D49 /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
 		92070DBC1D387F3E00F76D49 /* LabelTextVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTextVertical.h; sourceTree = "<group>"; };
 		92070DBD1D387F3E00F76D49 /* LabelTextVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTextVertical.m; sourceTree = "<group>"; };
+		9216DB2D1D758CD30017DC64 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		921A0D571D407A7900698548 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		921A0D5F1D40D08800698548 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
 		921A0D681D41AA5D00698548 /* UIImage2OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImage2OpenCV.h; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 		925FC5221D3CD26A00FAC749 /* FaceIdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceIdentifyViewController.h; sourceTree = "<group>"; };
 		925FC5231D3CD26A00FAC749 /* FaceIdentifyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceIdentifyViewController.mm; sourceTree = "<group>"; };
 		925FC5251D3CD81400FAC749 /* doge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doge.png; sourceTree = "<group>"; };
-		92F70EED1D406ED500E95C87 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		92F70EF21D40726900E95C87 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		92F70EF31D40726900E95C87 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		92F70EF61D40738600E95C87 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
@@ -132,8 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9216DB2E1D758CD30017DC64 /* opencv2.framework in Frameworks */,
 				921A0D581D407A7900698548 /* AssetsLibrary.framework in Frameworks */,
-				92F70EEE1D406ED500E95C87 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +178,7 @@
 		92070D941D377FA500F76D49 /* Opencv_test */ = {
 			isa = PBXGroup;
 			children = (
-				92F70EED1D406ED500E95C87 /* opencv2.framework */,
+				9216DB2D1D758CD30017DC64 /* opencv2.framework */,
 				92070D981D377FA500F76D49 /* AppDelegate.h */,
 				92070D991D377FA500F76D49 /* AppDelegate.m */,
 				92070D9B1D377FA500F76D49 /* ViewController.h */,
@@ -410,7 +409,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F70EEF1D406EEA00E95C87 /* opencv2.framework in Resources */,
 				92070DA51D377FA500F76D49 /* LaunchScreen.storyboard in Resources */,
 				925FC5261D3CD81400FAC749 /* doge.png in Resources */,
 				92070DA21D377FA500F76D49 /* Assets.xcassets in Resources */,
